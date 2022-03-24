@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/alt-text */
 import { useRef } from "react";
-import { Col, Container, Row } from "react-bootstrap";
+import { Col, Row } from "react-bootstrap";
+import { Helmet } from "react-helmet";
 
 import { IParallax, Parallax, ParallaxLayer } from "@react-spring/parallax";
 
@@ -16,6 +17,11 @@ function Landing(): JSX.Element {
 
   return (
     <>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>garfbutdev</title>
+      </Helmet>
+
       <Parallax ref={parallax} pages={3}>
         <ParallaxLayer
           offset={0}
@@ -53,7 +59,9 @@ function Landing(): JSX.Element {
                 <img alt="garfield" src="https://i.imgur.com/62bw3Xk.png" />
               </Row>
               <Row>
-                <h1 style={{ color: "#fff", textAlign: "center", }}>garfbutdev</h1>
+                <h1 style={{ color: "#fff", textAlign: "center" }}>
+                  garfbutdev
+                </h1>
               </Row>
             </Col>
           </Row>
@@ -91,12 +99,12 @@ function Landing(): JSX.Element {
                   }}
                 >
                   Since beginning of my journey as a developer nearly 3 years
-                  ago, I have done onsite work for agencies, train my skill and
-                  business mindset in different startups, and collaborated with
-                  talented people to create digital products for both business
-                  and consumer use. I'm quietly confident, naturally curious,
-                  and perpetually working on improving my chops one design
-                  problem at a time.
+                  ago, I have done both onsite and remote work for agencies,
+                  train my skill and business mindset in different startups, and
+                  collaborated with talented people to create digital products
+                  for both business and consumer use. I'm quietly confident,
+                  naturally curious, and perpetually working on improving my
+                  chops one design problem at a time.
                 </p>
               </Row>
             </Col>
